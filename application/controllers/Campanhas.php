@@ -45,8 +45,8 @@ class Campanhas extends CI_Controller{
 				'cam_investimento' => $this->input->post('cam_investimento'),
 				'cam_objetivo' => $this->input->post('cam_objetivo'),
 				'cam_nome' => $this->input->post('cam_nome'),
-				'cam_inicio' => $this->input->post('cam_inicio'),
-				'cam_fim' => $this->input->post('cam_fim'),
+                'cam_inicio' => data_banco($this->input->post('cam_inicio')),
+                'cam_fim' => data_banco($this->input->post('cam_fim')),
 				'cam_user' => $_SESSION ['user_id'],
             );
             
@@ -77,7 +77,7 @@ class Campanhas extends CI_Controller{
                     'cam_objetivo' => $this->input->post('cam_objetivo'),
                     'cam_nome' => $this->input->post('cam_nome'),
                     'cam_inicio' => data_banco($this->input->post('cam_inicio')),
-                    'cam_fim' => data_linda($this->input->post('cam_fim')),
+                    'cam_fim' => data_banco($this->input->post('cam_fim')),
                     'cam_user' => $_SESSION ['user_id'],
                 );
 

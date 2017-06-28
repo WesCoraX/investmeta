@@ -44,7 +44,7 @@ class Operacoes extends CI_Controller{
             $params = array(
 				'ope_campanha' => $this->input->post('ope_campanha'),
 				'ope_saldo' => $this->input->post('ope_saldo'),
-				'ope_dia' => $this->input->post('ope_dia'),
+				'ope_dia' => data_banco($this->input->post('ope_dia')),
             );
             
             $operaco_id = $this->Operacao->add_operaco($params);
