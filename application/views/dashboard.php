@@ -30,12 +30,12 @@
 </head>
 <body>
 
-<form>
+<!--<form>
     juros <input type="text" name="j"><br>
     investimento <input type="text" name="i"><br>
     dias <input type="text" name="d"><br>
     final <input type="text" name="f"><br>
-    <input type="submit" value="VAi porra">
-</form>
+    <input type="submit" value="Inserir Dados">
+</form> !-->
 
 <div id="curve_chart" style="width: 900px; height: 500px"></div>
