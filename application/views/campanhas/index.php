@@ -22,8 +22,8 @@
                         <td><?php echo $c['cam_nome']; ?></td>
 						<td><?php echo $c['cam_investimento']; ?></td>
 						<td><?php echo $c['cam_objetivo']; ?></td>
-						<td><?php echo $c['cam_inicio']; ?></td>
-						<td><?php echo $c['cam_fim']; ?></td>
+						<td><?php echo data_linda($c['cam_inicio']); ?></td>
+						<td><?php echo data_linda($c['cam_fim']); ?></td>
 
 						<td>
                             <a href="<?php echo site_url('campanhas/edit/'.$c['cam_id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Edit</a> 

@@ -21,7 +21,7 @@
 						<td><?php echo $o['ope_id']; ?></td>
 						<td><?php echo $o['ope_campanha']; ?></td>
 						<td><?php echo $o['ope_saldo']; ?></td>
-						<td><?php echo $o['ope_dia']; ?></td>
+						<td><?php echo data_linda($o['ope_dia']); ?></td>
 						<td>
                             <a href="<?php echo site_url('operacoes/edit/'.$o['ope_id']); ?>" class="btn btn-info btn-xs"><span class="fa fa-pencil"></span> Edit</a> 
                             <a href="<?php echo site_url('operacoes/remove/'.$o['ope_id']); ?>" class="btn btn-danger btn-xs"><span class="fa fa-trash"></span> Delete</a>
