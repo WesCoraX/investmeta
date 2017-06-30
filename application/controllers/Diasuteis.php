@@ -4,12 +4,12 @@
  * www.crudigniter.com
  */
 
-class Dashboard extends CI_Controller{
+class Diasuteis extends CI_Controller
+{
     function __construct()
     {
         parent::__construct();
-        if(!$this->ion_auth->logged_in())
-        {
+        if (!$this->ion_auth->logged_in()) {
             redirect('auth/login');
         }
 
@@ -22,11 +22,12 @@ class Dashboard extends CI_Controller{
 
         $config = $this->config->item('pagination');
         $config['base_url'] = site_url('diasuteis/index?');
-        $config['total_rows'] = $this->Operacao->get_all_operacoes_count();
+       /$config['total_rows'] = $this->Operacao->get_all_operacoes_count();
         $this->pagination->initialize($config);
 
         $data['diasuteis'] = $this->Operacao->get_all_operacoes($params);
 
         $data['_view'] = 'operacoes/index';
-        $this->load->view('layouts/main',$data);
+        $this->load->view('layouts/main', $data);
     }
+}
