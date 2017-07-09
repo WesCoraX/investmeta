@@ -22,12 +22,9 @@ class Diasuteis extends CI_Controller
 
         $config = $this->config->item('pagination');
         $config['base_url'] = site_url('diasuteis/index?');
-       /$config['total_rows'] = $this->Operacao->get_all_operacoes_count();
         $this->pagination->initialize($config);
 
-        $data['diasuteis'] = $this->Operacao->get_all_operacoes($params);
-
-        $data['_view'] = 'operacoes/index';
+        $data['_view'] = 'diasuteis/index';
         $this->load->view('layouts/main', $data);
     }
 }
