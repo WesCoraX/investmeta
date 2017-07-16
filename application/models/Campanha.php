@@ -18,13 +18,13 @@ class Campanha extends CI_Model {
 		return $this->db->count_all_results();
 	}
 
-	// function get_all_campanhas($params = array()) {
-	// 	$this->db->order_by('cam_id', 'desc');
-	// 	if(isset($params) && !empty($params)) {
-	// 		$this->db->limit($params['limit'], $params['offset']);
-	// 	}
-	// 	return $this->db->get('campanhas')->result_array();
-	// }
+//	 function get_all_campanhas($params = array()) {
+//	 	$this->db->order_by('cam_id', 'desc');
+//	 	if(isset($params) && !empty($params)) {
+//	 		$this->db->limit($params['limit'], $params['offset']);
+//	 	}
+//	 	return $this->db->get('campanhas')->result_array();
+//	 }
 
 
 	function add_campanha($params) {
